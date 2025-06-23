@@ -1,0 +1,26 @@
+.home {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.home {
+  background-image: url(/assets/72d49908-01-standart_apple16.gif);
+  height: 800px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: center;
+}
+
+h1,
+h5 {
+  padding: 1rem;
+  color: white;
+}
+
+.text-bg-clip {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 0.1px purple;
+}
