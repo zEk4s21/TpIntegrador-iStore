@@ -1,0 +1,9 @@
+.bg-violet {
+  background-color: purple !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white !important;
+  font-size: 1.1rem !important;
+}
