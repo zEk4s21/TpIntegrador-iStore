@@ -5,15 +5,18 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { ApiService } from '../../services/api.service';
+import { ApiService } from '../../service/api.service';
 import { Icelular } from '../../models/celular.models';
 import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-agregar',
   standalone: true,
-  imports: [ReactiveFormsModule, RouterModule],
-  templateUrl: './agregar.component.html',
+  imports: [ReactiveFormsModule, RouterModule],  
+  providers: [ApiService],
+
+templateUrl: './agregar.component.html',
   styleUrl: './agregar.component.css',
 })
 export class AgregarComponent {
