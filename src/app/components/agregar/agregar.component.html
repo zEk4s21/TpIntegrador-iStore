@@ -1,0 +1,143 @@
+<div class="gif-container">
+  <div class="form-hero d-flex align-items-center justify-content-center py-5">
+    <div class="container">
+      <div class="card custom-card shadow-lg border-0 rounded-4">
+        <div class="card-body p-4">
+          <h4 class="card-title text-center mb-4 text-white">
+            Agregar celular
+          </h4>
+          <form [formGroup]="miFormulario" (ngSubmit)="enviar()">
+            <div class="row">
+              <!-- Columna izquierda -->
+              <div class="col-md-6">
+                <h5 class="mb-3 text-white">Información general</h5>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    id="nombre"
+                    class="form-control"
+                    placeholder="Nombre"
+                    formControlName="nombre"
+                  />
+                  <label for="nombre">Nombre</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    id="modelo"
+                    class="form-control"
+                    placeholder="Modelo"
+                    formControlName="modelo"
+                  />
+                  <label for="modelo">Modelo</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    id="gb"
+                    class="form-control"
+                    placeholder="Gb"
+                    formControlName="gb"
+                  />
+                  <label for="gb">Gb</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <select
+                    class="form-select"
+                    id="color"
+                    formControlName="color"
+                  >
+                    <option value="" disabled selected>
+                      Seleccione un color
+                    </option>
+                    <option value="Blanco">Blanco</option>
+                    <option value="Negro">Negro</option>
+                    <option value="Negro">Purpura</option>
+                    <option value="Negro">Rojo</option>
+                    <option value="Negro">Plateado</option>
+                    <option value="Negro">Rose Gold</option>
+                    <option value="Negro">Dorado</option>
+                  </select>
+                  <label for="color">Color</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    id="precio"
+                    class="form-control"
+                    placeholder="Precio"
+                    formControlName="precio"
+                  />
+                  <label for="precio">Precio</label>
+                </div>
+              </div>
+
+              <!-- Columna derecha -->
+              <div class="col-md-6">
+                <h5 class="mb-3 text-white">Imágenes del celular</h5>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    id="imagen1"
+                    class="form-control"
+                    placeholder="Imagen 1"
+                    formControlName="imagen1"
+                  />
+                  <label for="imagen1">Imagen 1</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    id="imagen2"
+                    class="form-control"
+                    placeholder="Imagen 2"
+                    formControlName="imagen2"
+                  />
+                  <label for="imagen2">Imagen 2</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    id="imagen3"
+                    class="form-control"
+                    placeholder="Imagen 3"
+                    formControlName="imagen3"
+                  />
+                  <label for="imagen3">Imagen 3</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    id="imagen4"
+                    class="form-control"
+                    placeholder="Imagen 4"
+                    formControlName="imagen4"
+                  />
+                  <label for="imagen4">Imagen 4</label>
+                </div>
+              </div>
+            </div>
+
+            <hr class="text-white" />
+
+            <div
+              class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
+            >
+              <button type="submit" class="btn btn-success px-4">
+                Añadir Celular
+              </button>
+              <button
+                type="button"
+                class="btn btn-warning px-4"
+                (click)="limpiar()"
+              >
+                Limpiar
+              </button>
+              <button class="btn bg-violet px-4" routerLink="">Inicio</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
