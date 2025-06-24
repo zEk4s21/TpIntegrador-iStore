@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Icelular } from '../../models/celular.models';
-import { ApiService } from '../../services/api.service';
 import { RouterModule } from '@angular/router';
+import { ApiService } from '../../service/api.service';
 
 @Component({
   selector: 'app-celulares',

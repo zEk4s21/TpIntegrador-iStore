@@ -6,7 +6,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { Icelular } from '../../models/celular.models';
-import { ApiService } from '../../services/api.service';
+import { ApiService } from '../../service/api.service';
 import { ActivatedRoute } from '@angular/router';
 import { RouterModule } from '@angular/router';
 
