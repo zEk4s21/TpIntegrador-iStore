@@ -1,0 +1,41 @@
+.container {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.bg-trasparente {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bg-violet {
+  background-color: purple;
+  color: white;
+}
+
+.fondo {
+  background-image: url(/assets/icegif-1907.gif);
+  min-height: 100vh;
+  padding-top: 0;
+  margin-top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: auto;
+}
+
+.table {
+  color: white;
+}
+
+.volver {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 35rem;
+}
+
+.imagen-celular {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 0.375rem; /* Bootstrap rounded */
+  border-top-right-radius: 0.375rem;
+}
