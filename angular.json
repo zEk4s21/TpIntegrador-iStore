@@ -21,12 +21,17 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets",
+                "output": "/assets"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ]
+              "styles": [
+                "src/styles.css",
+                "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              ],
+              "scripts": [
+                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+              ]
           },
           "configurations": {
             "production": {
@@ -50,7 +55,7 @@
               "sourceMap": true
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "development"
         },
         "serve": {
           "builder": "@angular/build:dev-server",
@@ -78,15 +83,19 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets",
+                "output": "/assets"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ]
+            "styles": ["src/styles.css"],
+            "scripts": []
+            
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

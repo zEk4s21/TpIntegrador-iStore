@@ -1,0 +1,27 @@
+.home {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.home {
+  display: block;
+  height: 100vh; /* ✅ hace que ocupe el 100% de la altura de la ventana */
+  width: 100%;
+  background-image: url(/assets/72d49908-01-standart_apple16.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: center;
+}
+
+h1,
+h5 {
+  padding: 1rem;
+  color: white;
+}
+
+.text-bg-clip {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 0.1px purple;
+}

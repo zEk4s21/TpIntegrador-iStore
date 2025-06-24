@@ -1,0 +1,48 @@
+<div class="gif cont">
+  <div class="detalles p-4 rounded">
+    @if (cargando) {
+    <h5 class="text-center text-white"><i>Cargando...</i></h5>
+    } @else {
+    <!-- Detalles -->
+    <div class="general">
+      <h5 class="mb-4 text-white">Detalles del Celular</h5>
+      <div class="detalle-item">
+        <span class="label">Nombre:</span>
+        <span class="value">{{ celular?.nombre }}</span>
+      </div>
+      <div class="detalle-item">
+        <span class="label">Modelo:</span>
+        <span class="value">{{ celular?.modelo }}</span>
+      </div>
+      <div class="detalle-item">
+        <span class="label">Gb:</span>
+        <span class="value">{{ celular?.gb }}</span>
+      </div>
+      <div class="detalle-item">
+        <span class="label">Color:</span>
+        <span class="value">{{ celular?.color }}</span>
+      </div>
+      <div class="detalle-item">
+        <span class="label">Precio:</span>
+        <span class="value">{{ celular?.precio }}</span>
+      </div>
+    </div>
+
+    <!-- Imágenes -->
+    <div class="fotos mt-5">
+      <h5 class="mb-3 text-center text-white">Fotos del Celular</h5>
+      <div class="panelimg d-flex flex-wrap gap-3 justify-content-center">
+        <img class="img-thumbnail" [src]="celular?.imagen1" alt="Imagen 1" />
+        <img class="img-thumbnail" [src]="celular?.imagen2" alt="Imagen 2" />
+        <img class="img-thumbnail" [src]="celular?.imagen3" alt="Imagen 3" />
+        <img class="img-thumbnail" [src]="celular?.imagen4" alt="Imagen 4" />
+      </div>
+    </div>
+    }
+  </div>
+
+  <!-- Botón volver -->
+  <div class="text-center mt-4">
+    <button class="btn bg-violet" routerLink="/celulares">Volver</button>
+  </div>
+</div>
