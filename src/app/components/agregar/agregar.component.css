@@ -1,0 +1,66 @@
+.gif-container {
+  background-image: url("/assets/ed5ed1368625481f1f80ea2fbafb9103.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem 1rem;
+  min-height: 100vh;
+}
+
+.custom-card {
+  background-color: rgba(255, 255, 255, 0.08); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.detalles {
+  background-color: transparent; 
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.general {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detalle-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.label,
+.value {
+  color: #fff;
+  font-weight: 500;
+}
+
+.fotos {
+  margin-top: 2rem;
+}
+
+.panelimg img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+.panelimg img:hover {
+  transform: scale(1.05);
+}
+
+.bg-violet {
+  background-color: purple;
+  color: white;
+}

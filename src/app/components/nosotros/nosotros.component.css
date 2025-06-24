@@ -1,0 +1,48 @@
+.g1 {
+  display: block;
+  height: 100vh; /* ✅ hace que ocupe el 100% de la altura de la ventana */
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/assets/ykpfZk.gif");
+  background-position: center center;
+  color: white;
+  backdrop-filter: blur(8px);
+
+  h1 {
+    padding: 1rem;
+  }
+
+  h2 {
+    padding: 1rem;
+  }
+}
+
+.g2 {
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* fondo oscuro semitransparente */
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.descripcion {
+  margin-top: 3rem;
+  padding: 5rem;
+  border: purple 1px solid;
+}
+
+.volver {
+  margin: auto;
+}
+
+.bg-violet {
+  background-color: purple;
+  color: white;
+}
+
+.text-bg-clip {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 0.1px purple;
+}

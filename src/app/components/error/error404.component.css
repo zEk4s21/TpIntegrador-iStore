@@ -1,0 +1,22 @@
+div {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.bg-violet {
+  background-color: purple;
+  color: white;
+}
