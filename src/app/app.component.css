@@ -4,6 +4,22 @@
 
 .navbar .nav-link,
 .navbar .navbar-brand {
-  color: white !important;
+  color: rgb(255, 255, 255) !important;
   font-size: 1.1rem !important;
+  transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out; 
+
+}
+
+.navbar .nav-link:hover {
+  color: yellow !important;
+  font-size: 1.2rem !important;
+}
+
+.navbar-brand img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.navbar-brand img:hover {
+  transform: rotate(360deg) !important;
+
 }
